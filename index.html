@@ -289,7 +289,7 @@ footer ul{list-style:none;display:grid;gap:8px}
     <div class="pc um revela">
       <div class="lab">Para estabelecimentos</div>
       <h3>Divulgação sem custo</h3>
-      <ul><li>Duas páginas exclusivas no guia impresso</li><li>Página própria neste site</li><li>Visibilidade para 300 leitores da região</li><li>Você só oferece um benefício ao leitor, por no mínimo 6 meses</li><li>Guia vendido a R$ 79,00: acessível ao público da região</li></ul>
+      <ul><li>Duas páginas exclusivas no guia impresso</li><li>Página própria neste site</li><li>Visibilidade para 300 leitores da região</li><li>Você só oferece um benefício exclusivo para o leitor do guia</li><li>Guia vendido a R$ 79,00: acessível ao público da região</li></ul>
       <a class="btn" href="#contato" data-tipo="Estabelecimento">QUERO PARTICIPAR</a>
     </div>
     <div class="pc dois revela">
@@ -319,7 +319,7 @@ footer ul{list-style:none;display:grid;gap:8px}
   <div class="lab">Condições gerais</div>
   <h2 style="font-size:30px">Avisos importantes</h2>
   <div class="avisos">
-    <div class="av"><h4>Responsabilidade das ofertas</h4><p>Cada oferta é de responsabilidade do estabelecimento e vale por no mínimo 6 meses após o lançamento. Depois, pode ser alterada ou cancelada, com aviso neste site.</p></div>
+    <div class="av"><h4>Responsabilidade das ofertas</h4><p>Cada oferta é de responsabilidade do estabelecimento, é exclusiva para os leitores do guia e vale durante toda a edição.</p></div>
     <div class="av"><h4>Confirme antes de ir</h4><p>Verifique dias, horários e disponibilidade com o parceiro. Uso mediante apresentação do guia físico numerado, uma vez por oferta e exemplar.</p></div>
     <div class="av"><h4>Bebidas alcoólicas</h4><p>Venda proibida para menores de 18 anos. Se beber, não dirija.</p></div>
     <div class="av"><h4>Compra e retirada</h4><p>O guia é entregue somente por retirada, mediante documento com foto e assinatura. Em compras feitas à distância, você pode desistir em até 7 dias.</p></div>
@@ -449,7 +449,7 @@ function abrir(n) {
         <h5><img src="${IMG.regras}" alt="">REGRAS DE USO</h5><ul>${p.regras.map((r) => `<li>${r}</li>`).join("")}</ul></div>
       <div class="carimbo"><img src="${IMG.carimbo}" alt="">CARIMBO</div>
     </div>
-    <p style="font-size:12px;color:var(--cinza);margin-top:18px">Oferta de responsabilidade do estabelecimento, válida por no mínimo 6 meses após o lançamento e sujeita a alteração ou cancelamento depois desse prazo.</p>
+    <p style="font-size:12px;color:var(--cinza);margin-top:18px">Oferta de responsabilidade do estabelecimento, exclusiva para os leitores do guia.</p>
   </div>`;
   $("#modal").classList.add("on"); document.body.style.overflow = "hidden";
 }
@@ -465,7 +465,7 @@ const DOCS = {
   <h4>Cookies</h4><p>Este site não usa cookies de rastreamento ou publicidade.</p>`,
   termos: `<div class="lab">Condições gerais</div><h3>Termos de uso</h3>
   <h4>O guia</h4><p>O Circuito Interlagos é um guia impresso com benefícios oferecidos por estabelecimentos parceiros. Os benefícios valem mediante apresentação do guia físico numerado, uma vez por oferta e por exemplar, conforme as regras de cada página.</p>
-  <h4>Responsabilidade das ofertas</h4><p>Cada oferta, assim como os produtos, serviços, preços e atendimento, é de responsabilidade exclusiva do estabelecimento. As ofertas valem por no mínimo 6 meses após o lançamento; depois disso, podem ser alteradas ou canceladas, e as mudanças são informadas neste site.</p>
+  <h4>Responsabilidade das ofertas</h4><p>Cada oferta, assim como os produtos, serviços, preços e atendimento, é de responsabilidade exclusiva do estabelecimento. As ofertas são exclusivas para os leitores do guia e valem durante toda a validade da edição, conforme as regras de cada página.</p>
   <h4>Venda e retirada</h4><p>O guia é vendido pela equipe do Circuito Interlagos, que indica o ponto e o horário de retirada. A entrega é feita <b>somente por retirada</b>, em estabelecimentos parceiros ou locais definidos pela equipe. Para retirar, é necessário apresentar documento com foto e assinar o controle de retirada, informando nome, número do documento e telefone.</p>
   <h4>Compras à distância</h4><p>Nas compras feitas à distância (site, mensagem ou redes sociais), o comprador pode desistir em até 7 dias após a retirada do guia, com devolução do valor pago, conforme o Código de Defesa do Consumidor.</p>
   <h4>Bebidas alcoólicas</h4><p>Venda proibida para menores de 18 anos. Se beber, não dirija.</p>
